@@ -1,0 +1,10 @@
+{
+    "CompilerOptions": {
+        "parths": {
+        "#root/*": ["./*"],
+        "#tests/*": ["./tests/*"],
+        "#core/*": ["./core/*"],
+        "#api/*": ["./apps/api/*"]
+        }
+    }
+}

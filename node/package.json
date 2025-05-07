@@ -1,0 +1,31 @@
+{
+  "name": "nomedalojaaqui",
+  "version": "0.0.1",
+  "description": "node.js apps to make ecommerce works",
+  "license": "unlicensed",
+  "author": "des",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "DEBUG=eslint:cli-engine ./node_modules/eslint/bin/eslint.js --config .eslintrc.mjs ./**/*.mjs --debug",
+    "lint:fix": "DEBUG=eslint:cli-engine ./node_modules/eslint/bin/eslint.js --config .eslintrc.mjs --fix ./**/*.mjs --debug"
+  },
+  "imports": {
+    "#root/*": "./*",
+    "#tests/*": "./tests/*",
+    "#core/*": "./core/*",
+    "#api/*": "./apps/api/*"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.14.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.1"
+  }
+}
